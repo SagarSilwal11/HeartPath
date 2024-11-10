@@ -1,0 +1,50 @@
+{% extends 'appointment/doctors/doctor.html' %}
+{% load static %}
+
+{% block title %}
+Dr. Sujeeb - Interventional Cardiac Electrophysiologist
+{% endblock title %}
+
+{% block doctor %}
+<div class="doctor-profile">
+    <div class="image">
+        <img src="{% static 'images/heart_appoint_Sujeeb.jpg' %}" alt="Dr. Sujeeb">
+    </div>
+    <div class="text1">
+        <h2>Dr. Sujeeb</h2>
+        <p><strong>MBBS, MD</strong></p>
+        <p><strong>Interventional Cardiac Electrophysiologist</strong></p>
+        <p><strong>NMC No: 1234</strong></p> <!-- Replace with Dr. Sujeeb's actual NMC No -->
+        <br>
+
+        <h3>Specialties</h3>
+        <ul>
+            <li>Adult Cardiology</li>
+            <li>Interventional Cardiac Electrophysiology</li>
+        </ul>
+        <br>
+
+        <h3>Interests</h3>
+        <ul>
+            <li>ECGs</li>
+            <li>Cardiac Electrophysiology and Radiofrequency Ablations</li>
+        </ul>
+        <br>
+
+        <h3>Academic Qualifications & Fellowships</h3>
+        <ul>
+            <li>MBBS from Tribhuvan University, Nepal</li>
+            <li>MD Cardiology from Institute for Cardiovascular Diseases, Dhaka University, Bangladesh</li>
+            <li>Fellowship in Clinical Cardiac Electrophysiology from National University Hospital, Singapore</li>
+        </ul>
+        <br>
+
+        <h3>Memberships</h3>
+        <ul>
+            <li>Life Member, Nepal Medical Council</li>
+            <li>Life Member, Nepal Medical Association</li>
+            <li>Life Member, Cardiac Society of Nepal</li>
+        </ul>
+    </div>
+</div>
+{% endblock doctor %}

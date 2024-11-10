@@ -1,0 +1,58 @@
+{% extends 'appointment/doctors/doctor.html' %}
+{% load static %}
+
+{% block title %}
+Dr. Sanjay Singh K.C. - Cardiologist
+{% endblock title %}
+
+{% block doctor %}
+<div class="doctor-profile">
+    <div class="image">
+        <img src="{% static 'images/heart_appoint_Sanjay.jpg' %}" alt="Dr. Sanjay Singh K.C.">
+    </div>
+    <div class="text1">
+        <h2>Dr. Sanjay Singh K.C.</h2>
+        <p><strong>MBBS, MD</strong></p>
+        <p><strong>Cardiologist</strong></p>
+        <p><strong>NMC No: 10634</strong></p>
+        <br>
+
+        <h3>Specialty</h3>
+        <ul>
+            <li>Cardiology</li>
+        </ul>
+        <br>
+
+        <h3>Interests</h3>
+        <ul>
+            <li>Coronary Intervention (Coronary Angiogram & Angioplasty)</li>
+            <li>Permanent Pacemaker Implantation</li>
+            <li>Valvuloplasty</li>
+            <li>Device Closure Procedures</li>
+        </ul>
+        <br>
+
+        <h3>Academic Qualifications & Fellowships</h3>
+        <ul>
+            <li>MBBS (Tianjin Medical University) - 2006</li>
+            <li>MD (Zhengzhou University) - 2009</li>
+        </ul>
+        <br>
+
+        <h3>Memberships</h3>
+        <ul>
+            <li>Cardiac Society of Nepal</li>
+        </ul>
+        <br>
+
+        <h3>Languages</h3>
+        <ul>
+            <li>Nepali</li>
+            <li>English</li>
+            <li>Hindi</li>
+            <li>Chinese</li>
+            <li>Newari</li>
+        </ul>
+    </div>
+</div>
+{% endblock doctor %}

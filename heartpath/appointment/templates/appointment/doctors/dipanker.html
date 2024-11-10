@@ -1,0 +1,52 @@
+{% extends 'appointment/doctors/doctor.html' %}
+{% load static %}
+
+{% block title %}
+Dr. Dipanker Prajapati - Consultant Cardiologist
+{% endblock title %}
+
+{% block doctor %}
+<div class="doctor-profile">
+    <div class="image">
+        <img src="{% static 'images/heart_appoint_Dipanker.jpg' %}" alt="Dr. Dipanker Prajapati">
+    </div>
+    <div class="text1">
+        <h2>Dr. Dipanker Prajapati</h2>
+        <p><strong>MBBS, MD</strong></p>
+        <p><strong>Consultant Cardiologist & Head of Department</strong></p>
+        <p><strong>NMC No: 5565</strong></p>
+        <br>
+
+        <h3>Specialities</h3>
+        <ul>
+            <li>Non-invasive cardiology including cardiovascular CT and MRI</li>
+            <li>Clinical Research</li>
+        </ul>
+        <br>
+
+        <h3>Interests</h3>
+        <ul>
+            <li>Clinical cardiology</li>
+            <li>Non-invasive cardiology (echocardiography, stress echocardiography, carotid Doppler, cardiac CT, and MRI)</li>
+            <li>Research activities focusing on cardiovascular diseases</li>
+        </ul>
+        <br>
+
+        <h3>Academic Qualifications & Fellowships</h3>
+        <ul>
+            <li>M.B.B.S from Guangxi Medical University, China (2004)</li>
+            <li>M.D. (Cardiology) from Sun Yat-Sen University, China (2009)</li>
+            <li>Trained in level II competency of cardiovascular CT and MRI at Buffalo General Medical Center, University at Buffalo, Buffalo, New York</li>
+        </ul>
+        <br>
+
+        <h3>Memberships</h3>
+        <ul>
+            <li>Life Member, Nepal Medical Council</li>
+            <li>Life Member, Nepal Medical Association</li>
+            <li>Life Member, Cardiac Society of Nepal</li>
+            <li>Life Member, Arniko Society</li>
+        </ul>
+    </div>
+</div>
+{% endblock doctor %}

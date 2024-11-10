@@ -1,0 +1,51 @@
+
+{% extends 'appointment/doctors/doctor.html'%}
+{% load static%}
+{% block title %}
+Dr. Amrit Bogati - Consultant Cardiologist
+{% endblock title %}
+
+{% block doctor %}
+<div class="doctor-profile">
+    <div class="image">
+        <img src="{% static 'images/heart_appoint_amrit.jpg' %}" alt="Dr. Amrit Bogati">
+
+    </div>
+    <div class="text1">
+        <h2>Dr. Amrit Bogati</h2>
+        <p><strong>MBBS, MD</strong></p>
+        <p><strong>Cardiologist</strong></p>
+<br>
+        <h3>Specialities</h3>
+        <ul>
+            <li>Clinical Cardiology</li>
+            <li>Intervention Cardiology</li>
+        </ul>
+<br>
+        <h3>Interests</h3>
+        <ul>
+            <li>Coronary Intervention and Imaging</li>
+            <li>Congenital and Structural Intervention</li>
+        </ul>
+<br>
+        <h3>Academic Qualifications & Fellowships</h3>
+        <ul>
+            <li>MBBS (West China School of Medicine, Sichuan University, China)</li>
+            <li>MD (West China School of Medicine, Sichuan University, China)</li>
+        </ul>
+<br>
+        <h3>Memberships</h3>
+        <ul>
+            <li>Cardiac Society of Nepal</li>
+        </ul>
+<br>
+        <h3>Languages</h3>
+        <ul>
+            <li>Nepali</li>
+            <li>English</li>
+            <li>Hindi</li>
+            <li>Chinese</li>
+        </ul>
+    </div>
+</div>
+{% endblock doctor %}

@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<section class="home">
+    <div class="swiper home-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide" style="background:url({% static 'images/heart_hero.jpg' %}) no-repeat">
+                <div class="content">
+                    <span style="color:black;">Listen to Your Heart, Empower Your Future.</span>
+                    <h3 style="color:black;">Heart Path</h3>
+                    <a href="packages.html" class="btn">Discover more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- home section ends -->
+
+<!-- services section starts -->
+<section class="services">
+    <h1 class="heading-title">Our services</h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="{% static 'images/heart_check.png' %}" alt="">
+            <h3>HeartCheck</h3>
+        </div>
+        <div class="box">
+            <img src="{% static 'images/heart_hospital.png' %}" alt="">
+            <h3>Hospital</h3>
+        </div>
+        <div class="box">
+            <img src="{% static 'images/heart_appointment.png' %}" alt="">
+            <h3>Appointment</h3>
+        </div>
+        <div class="box">
+            <img src="{% static 'images/heart_resources.png' %}" alt="">
+            <h3>Heart Resources</h3>
+        </div>
+        <div class="box">
+            <img src="{% static 'images/heart_lifestyle.jpg' %}" alt="">
+            <h3>LifeStyle,Tips</h3>
+        </div>
+        <div class="box">
+            <img src="{% static 'images/heart_chatbot.png' %}" alt="">
+            <h3>Chatbot</h3>
+        </div>
+    </div>
+</section>
+<!-- services section ends -->
+
+<!-- home about section starts -->
+<section class="home-about">
+    <div class="image">
+        <img src="{% static 'images/heart_aboutus.webp' %}" alt="">
+    </div>
+    <div class="content">
+        <h3>About us</h3>
+        <p>Choose HeartPath for a seamless, personalized experience on your journey to better heart health. Our team of experts is here to help guide you every step of the way toward a healthier future.</p>
+        <a href="{% url 'about'%}" class="btn">Read more</a>
+    </div>
+</section>
+<!-- home about section ends -->
+{% endblock %}

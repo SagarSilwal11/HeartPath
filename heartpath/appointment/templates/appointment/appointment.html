@@ -1,0 +1,117 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<section class="packages">
+    <h1 class="heading-title">Top Cardiologists</h1>
+
+    <div class="box-container">
+        <div class="box">
+            <div class="image">
+                <img src="{% static 'images/heart_appoint_Dipanker.jpg' %}" alt="">
+            </div>
+            <div class="content">
+                <h3>Dr. Dipanker Prajapati</h3>
+                <p>MBBS, MD
+                    CONSULTANT Cardiologist & Head Of Department
+                    NMC No: 5565</p>
+                <a href="{% url 'doctor_detail' name='dipanker' %}" class="btn">Details</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="{% static 'images/heart_appoint_sujeeb.jpg' %}" alt="">
+            </div>
+            <div class="content">
+                <h3>Dr. SUJEEB RAJBHANDARI</h3>
+                <p>Sr. Consultant Cardiologist
+                    NMC No: 1727</p>
+                <a href="{% url 'doctor_detail' name='sujeeb' %}" class="btn">Details</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="{% static 'images/heart_appoint_binay.jpg' %}" alt="">
+            </div>
+            <div class="content">
+                <h3>Dr. BINAY KUMAR RAUNIYAR</h3>
+                <p>MBBS, MD
+                    CONSULTANT Cardiologist, Associate Professor & Supervisor FCPS
+                    NMC No: 6365</p>
+                <a href="{% url 'doctor_detail' name='binay' %}" class="btn">Details</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="{% static 'images/heart_appoint_dharma.jpeg' %}" alt="">
+            </div>
+            <div class="content">
+                <h3>Dr. DHARMA NAH YADAV</h3>
+                <p>MBBS, MD
+                    Consultant Cardiologist (Preventive)
+                    NMC No: 5934</p>
+                <a href="{% url 'doctor_detail' name='dharma' %}" class="btn">Details</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="{% static 'images/heart_appoint_chandra.webp' %}" alt="">
+            </div>
+            <div class="content">
+                <h3>Dr. CHANDRA MANI ADHIKARI</h3>
+                <p>MBBS, MD
+                    CONSULTANT CARDIOLOGIST & ASSOCIATE PROFESSOR
+                    Cardiology
+                    NMC No: 6248</p>
+                <a href="{% url 'doctor_detail' name='chandra' %}" class="btn">Details</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="{% static 'images/heart_appoint_amrit.jpg' %}" alt="">
+            </div>
+            <div class="content">
+                <h3>Dr. AMRIT BOGATI</h3>
+                <p>MBBS, MD
+                    Cardiologist
+                    NMC No: 7700</p>
+                <a href="{% url 'doctor_detail' name='amrit' %}" class="btn">Details</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="{% static 'images/heart_appoint_sanjay.jpg' %}" alt="">
+            </div>
+            <div class="content">
+                <h3>Dr. SANJAY SINGH K.C.</h3>
+                <p>MBBS, MD
+                    CARDIOLOGIST
+                    NMC No: 10634</p>
+                <a href="{% url 'doctor_detail' name='sanjay' %}" class="btn">Details</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="{% static 'images/heart_appoint_anjana.jpeg' %}" alt="">
+            </div>
+            <div class="content">
+                <h3>Dr. ANJANA ACHARYA</h3>
+                <p>MBBS, FCPS
+                    Registrar
+                    NMC No: 14942</p>
+                <a href="{% url 'doctor_detail' name='anjana' %}" class="btn">Details</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="load-more"><span class="btn">Load more</span></div>
+</section>
+
+{% endblock %}

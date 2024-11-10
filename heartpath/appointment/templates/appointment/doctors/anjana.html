@@ -1,0 +1,43 @@
+{% extends 'appointment/doctors/doctor.html' %}
+{% load static %}
+
+{% block title %}
+Dr. Anjana Acharya - Registrar
+{% endblock title %}
+
+{% block doctor %}
+<div class="doctor-profile">
+    <div class="image">
+        <img src="{% static 'images/heart_appoint_anjana.jpeg' %}" alt="Dr. Anjana Acharya">
+    </div>
+    <div class="text1">
+        <h2>Dr. Anjana Acharya</h2>
+        <p><strong>MBBS, FCPS</strong></p>
+        <p><strong>Registrar</strong></p>
+        <p><strong>NMC No: 14942</strong></p>
+        <br>
+
+        <h3>Specialities</h3>
+        <ul>
+            <li>General Medicine</li>
+            <li>Cardiology (basic clinical skills)</li>
+        </ul>
+        <br>
+
+        <h3>Academic Qualifications & Fellowships</h3>
+        <ul>
+            <li>MBBS (Institute Name, Year)</li>
+            <li>FCPS (Institute Name, Year)</li>
+        </ul>
+        <br>
+
+        <h3>Languages</h3>
+        <ul>
+            <li>Nepali</li>
+            <li>English</li>
+        </ul>
+
+        <!-- This area could be expanded if more information becomes available -->
+    </div>
+</div>
+{% endblock doctor %}

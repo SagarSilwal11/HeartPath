@@ -1,0 +1,43 @@
+{% extends 'appointment/doctors/doctor.html' %}
+{% load static %}
+
+{% block title %}
+Dr. Chandra Mani Adhikari - Consultant Cardiologist
+{% endblock title %}
+
+{% block doctor %}
+<div class="doctor-profile">
+    <div class="image">
+        <img src="{% static 'images/heart_appoint_chandra.webp' %}" alt="Dr. Chandra Mani Adhikari">
+    </div>
+    <div class="text1">
+        <h2>Dr. Chandra Mani Adhikari</h2>
+        <p><strong>MBBS, MD (Cardiology)</strong></p>
+        <p><strong>Consultant Cardiologist</strong></p>
+        <p><strong>Specializing in Interventional Cardiology & Heart Failure</strong></p>
+        <br>
+
+        <h3>Specialities</h3>
+        <ul>
+            <li>Interventional Cardiology (Coronary and Structural Interventions)</li>
+            <li>Heart Failure</li>
+        </ul>
+        <br>
+
+        <h3>Academic Qualifications & Fellowships</h3>
+        <ul>
+            <li>MBBS</li>
+            <li>MD (Cardiology)</li>
+            <li>Associate Professor (Cardiology)</li>
+            <li>Fellowship in Interventional Cardiology</li>
+        </ul>
+        <br>
+
+        <h3>Membership</h3>
+        <ul>
+            <li>Supervisor, College of Physicians & Surgeons Pakistan, FCPS (Cardiology)</li>
+            <li>General Secretary, Cardiac Society of Nepal</li>
+        </ul>
+    </div>
+</div>
+{% endblock doctor %}

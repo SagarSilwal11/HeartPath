@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="form-container">
+        <form action="" method="POST" novalidate>
+            {% csrf_token %}
+            
+            <!-- Display non-field errors -->
+            {% if form.non_field_errors %}
+                {% for error in form.non_field_errors %}
+                    <div class="error-message">{{ error }}</div>
+                {% endfor %}
+            {% endif %}
+
+            <!-- Render individual form fields with errors -->
+            {% for field in form %}
+                <div class="form-field">
+                    <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+                    {{ field }}
+                    <!-- Display field errors, if any -->
+                    {% if field.errors %}
+                        <div class="field-errors">{{ field.errors|striptags }}</div>
+                    {% endif %}
+                </div>
+            {% endfor %}
+            
+            <!-- Submit button -->
+            <input type="submit" class="submit-btn" value="Login">
+        </form>
+
+        <!-- Display any success or error messages -->
+        {% if messages %}
+            <div class="messages">
+                {% for message in messages %}
+                    <p class="message {% if message.tags %}{{ message.tags }}{% endif %}">{{ message }}</p>
+                {% endfor %}
+            </div>
+        {% endif %}
+    </div>
+    <p>Don't have an account? <a href="{% url 'signuppage' %}">Sign up here</a>.</p>
+{% endblock content %}

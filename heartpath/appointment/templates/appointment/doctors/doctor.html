@@ -1,0 +1,84 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}
+
+        {% endblock title %}
+    </title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <section class="header">
+        <a href="home.html" class="logo">HeartPath</a>
+ 
+        <nav class="navbar">
+            <a href="{% url 'home'%}">Home</a>
+            <a href="{% url 'about'%}">About</a>
+            <a href="appointment.html">Appointment</a>
+            <a href="prediction.html">Prediction</a>
+            <a href="login.html">Login</a>
+            <a href="signup.html">SignUp</a>
+            <a href="privacy.html">Privacy</a>
+            <a href="terms.html">Terms</a>
+            <a href="logout.html">Logout</a>
+        </nav>
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </section>
+    <!-- Doctor's Information Section -->
+    <section class="cont1">
+        {% block doctor%}   
+
+        {% endblock%}
+    </section>
+
+    <!-- Footer Section -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Quick links</h3>
+                <a href="home.html"><i class="fas fa-angle-right"></i>Home</a>
+                <a href="about.html"><i class="fas fa-angle-right"></i>About</a>
+                <a href="packages.html"><i class="fas fa-angle-right"></i>Appointment</a>
+                <a href="book.html"><i class="fas fa-angle-right"></i>CheckUp</a>
+            </div>
+            <div class="box">
+                <h3>Extra links</h3>
+                <a href="about.html"><i class="fas fa-angle-right"></i>About us</a>
+                <a href="privacy.html"><i class="fas fa-angle-right"></i>Privacy policy</a>
+                <a href="terms.html"><i class="fas fa-angle-right"></i>Terms of use</a>
+            </div>
+            <div class="box">
+                <h3>Contact info</h3>
+                <a href="tel:9861493518"><i class="fas fa-phone"></i>+977 9861493518</a>
+                <a href="tel:9849237482"><i class="fas fa-phone"></i>+977 9849237482</a>
+                <a href="mailto:abc@example.com"><i class="fas fa-envelope"></i>heartpath@gmail.com</a>
+            </div>
+            <div class="box">
+                <h3>Follow us</h3>
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i>Facebook</a>
+                <a href="https://twitter.com/"><i class="fab fa-twitter"></i>Twitter</a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i>Instagram</a>
+                <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i>LinkedIn</a>
+           Continuing with the HTML file:
+
+```html
+            </div>
+        </div>
+        <div class="credit">Created by <span>Heart Path</span> | All rights reserved</div>
+    </section>
+    <!-- footer section ends -->
+
+    <!-- swiper js link -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link -->
+    <script src="{% static 'js/script.js' %}"></script>
+
+</body>
+</html>

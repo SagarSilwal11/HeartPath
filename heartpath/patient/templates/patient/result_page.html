@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="result-container">
+        <h1 class="heading-title">Prediction Result</h1>
+        
+        <p><strong>Prediction: </strong>{{ prediction }}</p>
+        <p><strong>Patient ID: </strong>{{ patient_id }}</p>
+
+        <!-- Display additional patient details -->
+        <p><strong>Age: </strong>{{ patient.age }}</p>
+        <p><strong>Sex: </strong>{{ patient.sex }}</p>
+        <p><strong>Chest Pain: </strong>{{ patient.chestpain }}</p>
+        <p><strong>Resting BP: </strong>{{ patient.restingbp }}</p>
+        <p><strong>Cholesterol: </strong>{{ patient.cholesterol }}</p>
+        <p><strong>Fasting BS: </strong>{{ patient.fastingbs }}</p>
+        <p><strong>Resting ECG: </strong>{{ patient.restingecg }}</p>
+        <p><strong>Max HR: </strong>{{ patient.maxhr }}</p>
+        <p><strong>Exercise Angina: </strong>{{ patient.exerciseangina }}</p>
+        <p><strong>Old Peak: </strong>{{ patient.oldpeak }}</p>
+        <p><strong>ST Slope: </strong>{{ patient.st_slope }}</p>
+    </div>
+{% endblock %}
